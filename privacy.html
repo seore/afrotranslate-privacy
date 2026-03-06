@@ -1,36 +1,455 @@
-Privacy Policy for AfroTranslate
-
-Last Updated: January 27, 2026
-
-AfroTranslate ("we," "our," or "us") provides translation services for African languages.
-
-INFORMATION WE COLLECT
-- Text entered for translation is sent to Google Translate API for processing
-- Translation history is stored locally on your device
-- No personal information, account data, or analytics are collected
-
-HOW WE USE INFORMATION
-- Text translations are processed in real-time via Google Translate API
-- Translation history is stored on your device only
-- We do not share, sell, or transmit your data to third parties except Google Translate for processing
-
-DATA SECURITY
-- All API calls use HTTPS encryption
-- History data remains on your device
-- You can delete history at any time within the app
-
-YOUR RIGHTS
-- You can delete all data by clearing app history
-- You can uninstall the app to remove all data
-
-THIRD-PARTY SERVICES
-- Google Translate API: https://policies.google.com/privacy
-- Expo: https://expo.dev/privacy
-
-CHANGES TO POLICY
-We may update this policy. Changes will be posted in the app.
-
-CONTACT
-Email: your-email@example.com
-
-By using AfroTranslate, you agree to this privacy policy.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GRIOT Privacy Policy - How we protect your data">
+    <title>GRIOT Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            font-weight: 900;
+            letter-spacing: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin: 20px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin: 30px 0 15px 0;
+        }
+        
+        p, li {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .important {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 0.95em;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                letter-spacing: 3px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <header>
+            <h1>GRIOT</h1>
+            <div class="subtitle">Privacy Policy</div>
+        </header>
+        
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> March 6, 2026<br>
+                <strong>Effective Date:</strong> March 6, 2026
+            </div>
+            
+            <h2>Overview</h2>
+            <p>
+                GRIOT ("we," "our," or "the app") is an African voice translation application that helps users translate speech between African and international languages in real-time. We are committed to protecting your privacy and being transparent about our data practices.
+            </p>
+            
+            <div class="highlight">
+                <p><strong>Key Points:</strong></p>
+                <ul>
+                    <li>✅ We do NOT collect personal information (name, email, phone)</li>
+                    <li>✅ We do NOT store your voice recordings</li>
+                    <li>✅ We do NOT track you across apps or websites</li>
+                    <li>✅ We do NOT sell your data</li>
+                    <li>✅ We do NOT require user accounts</li>
+                </ul>
+            </div>
+            
+            <h2>1. Information We Collect</h2>
+            
+            <h3>1.1 Voice Recordings (Temporary)</h3>
+            <p>
+                When you use GRIOT's translation features, your voice is:
+            </p>
+            <ul>
+                <li>Captured by your device's microphone</li>
+                <li>Converted to text using Apple Speech Recognition</li>
+                <li>Sent to Google Translate API for translation</li>
+                <li>Converted back to speech using Google Cloud Text-to-Speech</li>
+            </ul>
+            
+            <div class="important">
+                <strong>Important:</strong> Voice recordings are processed in real-time and are <strong>NOT stored</strong> by GRIOT. The recordings exist only temporarily during the translation process.
+            </div>
+            
+            <h3>1.2 Translation Data</h3>
+            <p>
+                The text of your translations is temporarily sent to Google's servers for processing. We do not store your translation history on our servers.
+            </p>
+            
+            <h3>1.3 Usage Data (Minimal)</h3>
+            <p>
+                We may collect minimal, anonymous usage data such as:
+            </p>
+            <ul>
+                <li>Which language pairs are being used</li>
+                <li>Number of translation requests</li>
+                <li>App crashes or errors (for debugging)</li>
+            </ul>
+            <p>
+                This data is <strong>not linked to you</strong> and cannot identify individual users.
+            </p>
+            
+            <h3>1.4 What We DON'T Collect</h3>
+            <ul>
+                <li>❌ Personal information (name, email, phone number)</li>
+                <li>❌ Location data</li>
+                <li>❌ User accounts or login credentials</li>
+                <li>❌ Contacts or photos</li>
+                <li>❌ Payment information (app is free)</li>
+                <li>❌ Device identifiers for tracking</li>
+                <li>❌ Browsing history</li>
+            </ul>
+            
+            <h2>2. How We Use Your Information</h2>
+            
+            <p>Your voice and translation data is used <strong>solely</strong> for:</p>
+            <ol>
+                <li>Converting your speech to text</li>
+                <li>Translating text between languages</li>
+                <li>Converting translated text back to speech</li>
+                <li>Providing the core translation service</li>
+            </ol>
+            
+            <p>All processing happens in real-time for immediate translation. We do not use your data for:</p>
+            <ul>
+                <li>❌ Marketing or advertising</li>
+                <li>❌ Building user profiles</li>
+                <li>❌ Selling to third parties</li>
+                <li>❌ Tracking across apps</li>
+            </ul>
+            
+            <h2>3. Third-Party Services</h2>
+            
+            <p>GRIOT uses the following third-party services to provide translation functionality:</p>
+            
+            <h3>3.1 Apple Speech Recognition</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Convert speech to text</li>
+                <li><strong>Data:</strong> Voice recordings (temporary)</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a></li>
+            </ul>
+            
+            <h3>3.2 Google Translate API</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Translate text between languages</li>
+                <li><strong>Data:</strong> Translation text</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                <li><strong>Data Usage:</strong> <a href="https://cloud.google.com/translate/data-usage" target="_blank">https://cloud.google.com/translate/data-usage</a></li>
+            </ul>
+            
+            <h3>3.3 Google Cloud Text-to-Speech</h3>
+            <ul>
+                <li><strong>Purpose:</strong> Convert translated text to speech</li>
+                <li><strong>Data:</strong> Text to be spoken</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://cloud.google.com/text-to-speech/docs/data-usage" target="_blank">https://cloud.google.com/text-to-speech/docs/data-usage</a></li>
+            </ul>
+            
+            <h3>3.4 Expo Framework</h3>
+            <ul>
+                <li><strong>Purpose:</strong> App development framework</li>
+                <li><strong>Data:</strong> None (crash reporting is disabled)</li>
+                <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+            </ul>
+            
+            <div class="important">
+                <strong>Note:</strong> These third-party services may retain data according to their respective privacy policies for service improvement and fraud prevention. Please review their privacy policies for details.
+            </div>
+            
+            <h2>4. Data Retention</h2>
+            
+            <h3>4.1 By GRIOT</h3>
+            <p>
+                We do <strong>not store</strong> any of your voice recordings or translation data. All processing is done in real-time.
+            </p>
+            
+            <h3>4.2 By Third-Party Services</h3>
+            <p>
+                Google and Apple may retain data according to their respective privacy policies. Please refer to their policies linked above for specific retention periods.
+            </p>
+            
+            <h3>4.3 On Your Device</h3>
+            <p>
+                The following data is stored <strong>locally on your device only</strong>:
+            </p>
+            <ul>
+                <li>Offline translation packs (pre-loaded common phrases)</li>
+                <li>Conversation history (if Conversation Mode is used)</li>
+                <li>Language preferences</li>
+            </ul>
+            <p>
+                This data <strong>never leaves your device</strong> and can be deleted by uninstalling the app.
+            </p>
+            
+            <h2>5. Data Security</h2>
+            
+            <p>We take data security seriously:</p>
+            <ul>
+                <li>🔒 All data transmission uses encrypted HTTPS connections</li>
+                <li>🔒 No user accounts means no account security risks</li>
+                <li>🔒 No persistent storage of sensitive data</li>
+                <li>🔒 Minimal data collection reduces risk</li>
+            </ul>
+            
+            <h2>6. Your Rights & Choices</h2>
+            
+            <h3>6.1 Microphone Permission</h3>
+            <p>
+                You can grant or revoke microphone access at any time:
+            </p>
+            <ol>
+                <li>Go to <strong>Settings → GRIOT → Microphone</strong></li>
+                <li>Toggle permission on or off</li>
+            </ol>
+            <p>Note: Microphone access is required for voice translation to work.</p>
+            
+            <h3>6.2 Data Deletion</h3>
+            <p>
+                Since GRIOT does not collect or store personal data:
+            </p>
+            <ul>
+                <li>There is no personal data to access or download</li>
+                <li>There is no personal data to delete from our servers</li>
+                <li>You can uninstall the app at any time to remove all local data from your device</li>
+            </ul>
+            
+            <h3>6.3 Offline Mode</h3>
+            <p>
+                You can use offline translation packs for common phrases without any internet connection, meaning no data is sent to third-party services.
+            </p>
+            
+            <h2>7. Children's Privacy</h2>
+            
+            <p>
+                GRIOT does not knowingly collect data from children under 13 years of age. The app:
+            </p>
+            <ul>
+                <li>Does not require user accounts</li>
+                <li>Does not collect personal information</li>
+                <li>Is designed for general audiences</li>
+                <li>Does not contain advertising</li>
+            </ul>
+            
+            <p>
+                If you believe a child has provided information through the app, please contact us at <a href="mailto:privacy@griot.app">privacy@griot.app</a>.
+            </p>
+            
+            <h2>8. International Data Transfers</h2>
+            
+            <p>
+                Your voice and translation data may be transmitted to and processed by:
+            </p>
+            <ul>
+                <li>Apple servers (for speech recognition)</li>
+                <li>Google servers (for translation and text-to-speech)</li>
+            </ul>
+            
+            <p>
+                These services may be located in different countries. By using GRIOT, you consent to this transfer. Google and Apple have appropriate safeguards in place for international data transfers.
+            </p>
+            
+            <h2>9. Changes to This Policy</h2>
+            
+            <p>
+                We may update this privacy policy from time to time to reflect:
+            </p>
+            <ul>
+                <li>Changes in our data practices</li>
+                <li>New features or functionality</li>
+                <li>Legal or regulatory requirements</li>
+            </ul>
+            
+            <p>
+                When we make changes:
+            </p>
+            <ul>
+                <li>The "Last Updated" date at the top will be revised</li>
+                <li>Significant changes will be communicated in the app</li>
+                <li>The updated policy will be posted on this page</li>
+            </ul>
+            
+            <p>
+                Your continued use of GRIOT after changes indicates acceptance of the updated policy.
+            </p>
+            
+            <h2>10. Contact Us</h2>
+            
+            <p>
+                If you have questions, concerns, or requests regarding this privacy policy or GRIOT's data practices, please contact us:
+            </p>
+            
+            <div class="highlight">
+                <p><strong>Email:</strong> <a href="mailto:privacy@griot.app">privacy@griot.app</a></p>
+                <p><strong>Support:</strong> <a href="mailto:support@griot.app">support@griot.app</a></p>
+                <p><strong>Website:</strong> <a href="index.html">GRIOT Home</a></p>
+                <p><strong>Support Page:</strong> <a href="support.html">Help & Documentation</a></p>
+            </div>
+            
+            <p>We will respond to privacy inquiries within 30 days.</p>
+            
+            <h2>11. Your California Privacy Rights</h2>
+            
+            <p>
+                If you are a California resident, you have the right to:
+            </p>
+            <ul>
+                <li>Know what personal information is collected</li>
+                <li>Know if personal information is sold or shared</li>
+                <li>Access your personal information</li>
+                <li>Request deletion of personal information</li>
+                <li>Opt-out of the sale of personal information</li>
+            </ul>
+            
+            <p>
+                <strong>For GRIOT users:</strong> We do not collect personal information, do not sell data, and do not track users. Therefore, there is no personal data to access or delete.
+            </p>
+            
+            <h2>12. European Users (GDPR)</h2>
+            
+            <p>
+                If you are located in the European Economic Area (EEA) or United Kingdom, you have rights under GDPR including:
+            </p>
+            <ul>
+                <li>Right to access your data</li>
+                <li>Right to rectification</li>
+                <li>Right to erasure</li>
+                <li>Right to restrict processing</li>
+                <li>Right to data portability</li>
+                <li>Right to object</li>
+            </ul>
+            
+            <p>
+                <strong>For GRIOT users:</strong> Since we do not store personal data, these rights do not apply. Voice recordings are processed temporarily and not stored.
+            </p>
+            
+            <div class="highlight">
+                <h3>Summary</h3>
+                <p>
+                    <strong>Your privacy is important to us.</strong> GRIOT is designed to provide translation services without collecting or storing your personal information. Voice recordings are processed in real-time and immediately discarded. We have no user accounts, no tracking, and no data sales.
+                </p>
+                <p style="margin-top: 15px;">
+                    By using GRIOT, you trust us with your voice during translation. We honor that trust by keeping your data processing minimal, temporary, and secure.
+                </p>
+            </div>
+            
+            <p style="text-align: center; color: #999; margin-top: 40px; font-size: 0.9em;">
+                © 2026 GRIOT. All rights reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
